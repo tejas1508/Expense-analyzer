@@ -1,0 +1,259 @@
+/* Styling for top navbar */
+
+* {
+  font-family: 'Roboto',sans-serif;
+}
+
+a.link {
+  text-decoration: none;
+}
+
+div.topnavbar {
+  align-content: center;
+  min-height:70px;
+  border-bottom:#336600 3px solid;
+}
+
+div.topnavbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #17202A;
+}
+
+div.topnavbar li {
+  float: left;
+  width: 40;
+  height: 40;
+}
+
+div.topnavbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Change the link color to #111 (black) on hover */
+div.topnavbar li a:hover {
+  background-color: #111;
+}
+
+div.topnavbar li.fl {
+  float: right;
+}
+
+/* Styling for side navbar */
+
+div.sidenavbar {
+  /* float: left; */
+  margin-right: : 0;
+  width: auto;
+  height: 100%;
+}
+
+div.sidenavbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  position: absolute;
+  float: left;
+  height: 100%;
+  overflow:hidden;
+  background-color: #00cccc;
+}
+
+div.sidenavbar li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+div.sidenavbar li a:hover {
+  background-color: #17202A;
+  color: white;
+}
+
+.container{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Sigh out button styles */
+.button {
+  display: block;
+  position: relative;
+  float: left;
+  width: 80px;
+  padding: 0;
+  margin-top: 8px;
+  font-weight: 600;
+  text-align: center;
+  /* vertical-align: middle; */
+  line-height: 30px;
+  color: #FFF;
+  border:0;
+  transition: all 0.2s ;
+}
+
+.btnBlueGreen {
+  background: #006666;
+}
+
+.btnFade.btnBlueGreen:hover {
+  background: #006666;
+}
+
+.main-content {
+  width: 100%;
+  background-color: #006666;
+  /* overflow:hidden; */
+  clear: both;
+}
+
+.form-group {
+  background-color: #00cccc;
+  margin: 20px;
+  padding: 25px;
+  display: block;
+  width: 625px;
+  display: inline-block;
+}
+
+input[type=text],input[type=password],input[type=email], select, textarea {
+  width: 300px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.form-group-side {
+  position: relative;
+  display: block;
+  background-color: #00cccc;
+  width: 23%;
+  height: 800px;
+  float: right;
+}
+
+
+form.form {
+    padding: 25px;
+}
+
+ input.input-side[type=text],input.input-side[type=password],input.input-side[type=email], select.input-side, textarea.input-side {
+  width: 100px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label.side-label {
+  padding: 0;
+  display: inline-block;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: right;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make
+the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* .content-1{
+  float:left;
+  height:100%;
+  width:50%;
+} */
+span.error {
+  color: #ff0000;
+}
+
+.card {
+  display: block;
+  position: absolute;
+  left: 15%;
+  margin-left: 50px;
+  padding: 20px;
+  background: #008080;
+  width:50%;
+  border-radius: 20px;
+}
+
+.shadow1 {
+  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+}
+
+.table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table td, .table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #00cccc;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #17202A;
+  color: white;
+}
+
+footer{
+  margin-top: 150px;
+  padding:20px;
+  color:#ffffff;
+  background-color:#006666;
+  display: inline-block;
+}
+
+footer p{
+  text-align: center;
+}
